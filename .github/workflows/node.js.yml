@@ -30,8 +30,8 @@
               - name: Use MongoDB
                 uses: supercharge/mongodb-github-action@1.10.0
 
+              - run: npm i
               - name: Run tests
-                run: npm i
                 run: |
-                  npm run dev
+                  npm run dev &
                   npm test
